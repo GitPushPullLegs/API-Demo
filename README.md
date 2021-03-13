@@ -1,21 +1,21 @@
 # API Demo
 
-##What is this?
+## What is this?
 This is a flexible API that generates dynamic SQL queries.
 
-##Queries:
+## Queries:
 * Group by student_id and count completed assignments ✓
 * Group by course_id and average grade ✓
 * Group by teacher_id and count assignments created ✓
 * Group by school_id and find percentage of students with more than 1 assignment completed ✓
 
-##Explanation
+## Explanation
 Using a lightweight framework, Flask, I've developed an API that generates new SQL queries from a sqlite database based on the client's request and responds with JSON data.
 
-##Installation:
+## Installation:
 `pip install git+https://github.com/GitPushPullLegs/API-Demo.git`
 
-##Usage:
+## Usage:
 **Test API**
 ```python
 """

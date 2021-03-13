@@ -12,6 +12,9 @@ This is a flexible API that generates dynamic SQL queries.
 ##Explanation
 Using a lightweight framework, Flask, I've developed an API that generates new SQL queries from a sqlite database based on the client's request and responds with JSON data.
 
+##Installation:
+`pip install git+https://github.com/GitPushPullLegs/API-Demo.git`
+
 ##Usage:
 **Test API**
 ```python

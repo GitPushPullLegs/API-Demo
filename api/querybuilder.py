@@ -1,3 +1,26 @@
+"""A library to dynamically build SQL queries.
+
+A SQL query is built following a specific pattern: SELECT, FROM, WHERE, etc...
+Instead of having a base SQL query string written out where I insert and remove statements as needed,
+this class keeps the parts separate and joins them in the correct order when the final query is called.
+
+    Typical usage example:
+
+    query = QueryBuilder()
+    query.select('random_column')
+    query.from_table('table_1 O')
+    query.where('random_column >= 13')
+    query.distinct()
+    query.left_join('table_2 T ON T.merge = O.merge')
+    print(query.query)
+
+    The above prints the following:
+
+    SELECT DISTINCT random_column
+    FROM table_1 O
+    LEFT JOIN table2 T ON T.merge = O.merge
+    WHERE random_column >= 13
+"""
 class QueryBuilder:
     _QUERY = {
         'SELECT': [],
